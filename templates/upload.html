@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Upload File{% endblock %}
+
+{% block content %}
+<div class=""container mt-4">
+    <h2>Upload Your Event Brochure</h2>
+    <p>Accepted formats: JPG, PNG, or PDF</p>
+
+    <form action="/upload" method="post" enctype="multipart/form-data" class="custom-file d-flex">
+        <input type="file" name="file" class="form-control flex-grow-1 me-2 align-items-center" accept="image/*,application/pdf">
+        <button type="submit" class="btn btn-custom">Upload</button>
+    </form>
+</div>
+
+{% if error %}
+<div class="alert alert-danger mt-3">
+    {{ error }}
+</div>
+{% endif %}
+{% endblock %}

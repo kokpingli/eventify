@@ -1,0 +1,8 @@
+opencv-python==4.5.5.64
+pytesseract
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib
+PyMuPDF
+pdf2image
+flask

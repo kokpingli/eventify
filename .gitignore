@@ -1,0 +1,24 @@
+# Python virtual environment
+venv/
+
+# compiled Python files
+*.pyc
+__pycache__/
+
+# directories for temporary or experimental work
+sandbox/
+
+# directories for uploaded files (user-generated content)
+static/uploads
+
+# system files
+.DS_Store
+Thumbs.db
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# credentials
+credentials.json
+token.json

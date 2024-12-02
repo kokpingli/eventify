@@ -1,0 +1,46 @@
+header {
+    background-color: darkolivegreen;
+    color: lightgrey;
+}
+
+.btn-custom {
+    background-color: #daa520;
+    border-color: #daa520;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.btn-custom:hover {
+    background-color: #b8860b;
+    border-color: #b8860b;
+}
+
+.custom-file {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Ensure the entire page stretches to full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+}
+
+main {
+    flex: 1; /* pushes the footer to the bottom if content is short */
+    position: relative; /* rewuire for positioning sticky buttons */
+}
+
+.sticky-buttons {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
